@@ -9,11 +9,15 @@
 
 		sudo apt-get install php5-intl
 		
-3. Set a valid PHP timezone
+3. Install the cURL PHP extension that is required to install the Symfony2 framework
+		
+		sudo apt-get install php5-curl		
+
+4. Set a valid PHP timezone
 
 		echo 'date.timezone = UTC' | sudo tee --append /etc/php5/apache2/php.ini
 		
-4. Starting MySQL-Server
+5. Starting MySQL-Server
 
 		sudo mysql-ctl install
 		sudo mysql-ctl start
